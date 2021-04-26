@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #222831 !important;
+  color: white !important;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+.mode {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff !important;
+}
+.logo {
+  height: 200px;
+  width: 200px;
+}
+.input__div {
+  background: #d8e3e7;
+  border-radius: 10px;
+  padding: 10px 0;
+  width: 40%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .input__div {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .input__div {
+    width: 90%;
+  }
+}
+.input__div > input {
+  background: transparent;
+  border: none;
+  width: 80%;
+  border-bottom: 2px solid #687980;
+  color: #132c33;
+  font-weight: 500;
+}
+input:focus {
+  outline: none;
+}
+.plus {
+  color: #2978b5;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+}
+.plus:hover {
+  color: #325288;
+  transition: all 0.5s ease-in-out;
+}
+.edit {
+  color: green;
+}
+.edit:hover {
+  color: #184d47;
+  cursor: pointer;
+  font-size: 20px;
+  transition: all 0.5s ease-in-out;
+}
+.trash {
+  color: red;
+}
+.trash:hover {
+  color: #810000;
+  cursor: pointer;
+  font-size: 20px;
+  transition: all 0.5s ease-in-out;
+}
+.scroll__bar {
+  height: 250px;
+  border-radius: 5px;
+  background: #fff;
+  color: black;
+  overflow: scroll;
+}
+
+/* width */
+.scroll__bar::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+.scroll__bar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.scroll__bar::-webkit-scrollbar-thumb {
+  background: #8ab6d6;
+}
+
+/* Handle on hover */
+.scroll__bar::-webkit-scrollbar-thumb:hover {
+  background: #0061a8;
+}
